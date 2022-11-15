@@ -19,7 +19,7 @@ module.exports = {
       },
       fontFamily: {
         Grotesk: ["Space Grotesk", "sans-serif"],
-        IBM: ["IBM Plex Sans", "sans-serif"],
+        IBM: ["IBM Plex Serif", "sans-serif"],
       },
       container: {
         center: true,
@@ -31,5 +31,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  corePlugins: {
+    aspectRatio: false,
+  },
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };

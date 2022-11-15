@@ -29,6 +29,7 @@ const autoprefixer = require("gulp-autoprefixer");
 //const webp = require('gulp-webp'); //For converting images to WebP format
 //const replace = require('gulp-replace'); //For Replacing img formats to webp in html
 const logSymbols = require("log-symbols"); //For Symbolic Console logs :) :P
+const svgSprite = require("gulp-svg-sprite");
 
 //Load Previews on Browser on dev
 function livePreview(done) {
@@ -88,6 +89,11 @@ function devImages() {
     dest(options.paths.dist.img)
   );
 }
+function devSvg() {
+  return src(`${options.paths.src.svg}/**/*`).pipe(
+    dest(options.paths.dist.svg)
+  );
+}
 
 function watchFiles() {
   watch(
@@ -100,6 +106,7 @@ function watchFiles() {
   );
   watch(`${options.paths.src.js}/**/*.js`, series(devScripts, previewReload));
   watch(`${options.paths.src.img}/**/*`, series(devImages, previewReload));
+  watch(`${options.paths.src.svg}/**/*`, series(devSvg, previewReload));
   console.log("\n\t" + logSymbols.info, "Watching for Changes..\n");
 }
 
@@ -151,6 +158,11 @@ function prodImages() {
     .pipe(dest(options.paths.build.img));
 }
 
+function prodSvg() {
+  return src(options.paths.src.svg + "/**/*")
+    .pipe(svgsprite())
+    .pipe(dest(options.paths.build.svg));
+}
 function prodClean() {
   console.log(
     "\n\t" + logSymbols.info,
@@ -169,13 +181,13 @@ function buildFinish(done) {
 
 exports.default = series(
   devClean, // Clean Dist Folder
-  parallel(devStyles, devScripts, devImages, devHTML), //Run All tasks in parallel
+  parallel(devStyles, devScripts, devImages, devHTML, devSvg), //Run All tasks in parallel
   livePreview, // Live Preview Build
   watchFiles // Watch for Live Changes
 );
 
 exports.prod = series(
   prodClean, // Clean Build Folder
-  parallel(prodStyles, prodScripts, prodImages, prodHTML), //Run All tasks in parallel
+  parallel(prodStyles, prodScripts, prodImages, prodHTML, prodSvg), //Run All tasks in parallel
   buildFinish
 );

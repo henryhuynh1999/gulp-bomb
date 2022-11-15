@@ -8,83 +8,108 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
   </head>
   <body>
-    <main class="w-full h-[2300px] bg-black container py-8">
+    <main class="w-full h-[2300px] bg-black container py-8 scrollmain">
       <div class="border border-white h-[2000px]">
         <header>
           <nav>
             <ul
               class="relative flex items-center justify-between text-white border divide-x-2 divide-white border-b-white"
             >
-              <li class="flex-1">Hiimbomb</li>
+              <li class="container flex-1">Hiimbomb</li>
               <li
-                class="hidden lg:block hover:bg-white hover:text-black hover:delay-150"
+                class="hidden p-4 lg:block hover:bg-white hover:text-black hover:delay-150"
               >
                 <a href="#">Home</a>
               </li>
               <li
-                class="hidden lg:block hover:bg-white hover:text-black hover:delay-150"
+                class="hidden p-4 lg:block hover:bg-white hover:text-black hover:delay-150"
               >
                 <a href="#">About</a>
               </li>
               <li
-                class="hidden lg:block hover:bg-white hover:text-black hover:delay-150"
+                class="hidden p-4 lg:block hover:bg-white hover:text-black hover:delay-150"
               >
                 <a href="#">Contact</a>
               </li>
+              <button
+                class="absolute top-0 right-0 block p-2 text-white lg:hidden"
+              >
+                Say hi.
+              </button>
             </ul>
           </nav>
-          <button class="absolute top-0 right-0 block p-2 lg:hidden">🍥</button>
         </header>
         <main class="text-white">
           <section>
             <div
-              class="h-[300px] relative flex items-center justify-center border border-b-white line"
+              class="h-[300px] relative flex items-center justify-center border border-b-white line text-[2.23rem]"
             >
               Hey ! I'm Bomb Creative Frontend Developer and UI Designer 🙂
             </div>
           </section>
-          <section class="h-[500px] border border-b-white">
-            <div>With more than</div>
+          <section
+            class="h-[500px] border text-center border-b-white flex items-center justify-center text-[2.23rem]"
+          >
+            <div>
+              I'm fresher with experience in Frontend Development.Strong solve
+              problem, teamwork, and communication skills. I'm a self-taught
+              Frontend Developer and UI Designer. I'm passionate about creating
+              beautiful and functional websites and applications.
+              <span class="p-2 border border-white">🚀</span>
+            </div>
           </section>
-          <section class="h-screen">
-            <ul class="grid grid-cols-3 divide-x-2 divide-white">
-              <li>
-                <p>Nov 3,2022</p>
-                <div class="w-[100px]">
-                  <img
-                    src="https://images.unsplash.com/photo-1620830958756-46335282c574?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvd2Nhc2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                    alt=""
-                  />
-                </div>
-                <div>Title</div>
-                <p>Description</p>
-                <span>Read me</span>
-              </li>
-              <li>
-                <p>Nov 3,2022</p>
-                <div>
-                  <img
-                    src="https://images.unsplash.com/photo-1620830958756-46335282c574?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvd2Nhc2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                    alt=""
-                  />
-                </div>
-                <div>Title</div>
-                <p>Description</p>
-                <span>Read me</span>
-              </li>
-              <li>
-                <p>Nov 3,2022</p>
-                <div>
-                  <img
-                    src="https://images.unsplash.com/photo-1620830958756-46335282c574?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvd2Nhc2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                    alt=""
-                  />
-                </div>
-                <div>Title</div>
-                <p>Description</p>
-                <span>Read me</span>
-              </li>
-            </ul>
+          <section>
+            <div>
+              <ul class="grid grid-cols-2 divide-x-[1px] divide-white">
+                <li
+                  class="flex flex-col items-center justify-center text-center"
+                >
+                  <div>13:20</div>
+                  <div class="border border-white">
+                    <img
+                      src="https://www.mamboleoo.be/uploads/images/articles/_crop_35x2_1/icon-svg-custom-property.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div>Title</div>
+                  <p>description</p>
+                  <button class="after:content-['👍']">Click</button>
+                </li>
+                <li
+                  class="flex flex-col items-center justify-center text-center"
+                >
+                  <div>13:20</div>
+                  <div class="border border-white">
+                    <img
+                      src="https://www.mamboleoo.be/uploads/images/articles/_crop_35x2_1/icon-svg-custom-property.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div>Title</div>
+                  <p class="test">description</p>
+                  <button class="after:content-['👍']">Click</button>
+                </li>
+                <li
+                  class="flex flex-col items-center justify-center text-center border col-span-full border-t-white"
+                >
+                  <div>13:20</div>
+                  <div class="border border-white">
+                    <img
+                      src="https://www.mamboleoo.be/uploads/images/articles/_crop_35x2_1/icon-svg-custom-property.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div>Title</div>
+                  <p>description</p>
+                  <button class="after:content-['👍']">Hi</button>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="w-full h-[300px] bg-red-50">
+            <div>
+              <img src="svg/github.svg" alt="" />
+            </div>
           </section>
         </main>
       </div>
