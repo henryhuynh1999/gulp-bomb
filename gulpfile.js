@@ -168,7 +168,7 @@ const config = {
 };
 function prodSvg() {
   return src(options.paths.src.svg + "/**/*")
-    .pipe(svgsprite(config))
+    .pipe(svgSprite(config))
     .pipe(dest(options.paths.build.svg));
 }
 function prodClean() {
