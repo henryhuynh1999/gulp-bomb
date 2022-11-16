@@ -1,3 +1,57 @@
 .line {
   @apply before:block before:absolute before:w-0 before:h-[60px] before:border before:border-l-white before:top-0 before:left-[50%] max-lg:after:block max-lg:after:absolute max-lg:after:w-0 max-lg:after:h-[60px] max-lg:after:border max-lg:after:border-l-white max-lg:after:bottom-0 max-lg:after:left-[50%];
 }
+.noise {
+  &::before {
+    animation: grain 6s steps(10) infinite;
+    background-image: url("https://tympanus.net/Development/CSSMarqueeMenu/img/noise.png");
+    content: "";
+    height: 300%;
+    left: -50%;
+    opacity: 0.6;
+    position: fixed;
+    top: -100%;
+    width: 300%;
+  }
+}
+.hiimbomb {
+}
+.hamberger {
+  @apply flex flex-col space-y-1 justify-center items-center w-[20px] h-[30px] cursor-pointer;
+  div {
+    @apply w-[10px] h-[2px] bg-white rounded-full;
+  }
+}
+@keyframes grain {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0%);
+  }
+  70% {
+    transform: translate(0%, 15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}

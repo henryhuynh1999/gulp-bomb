@@ -157,10 +157,18 @@ function prodImages() {
     .pipe(imagemin())
     .pipe(dest(options.paths.build.img));
 }
-
+const config = {
+  mode: {
+    css: {
+      render: {
+        css: true,
+      },
+    },
+  },
+};
 function prodSvg() {
   return src(options.paths.src.svg + "/**/*")
-    .pipe(svgsprite())
+    .pipe(svgsprite(config))
     .pipe(dest(options.paths.build.svg));
 }
 function prodClean() {

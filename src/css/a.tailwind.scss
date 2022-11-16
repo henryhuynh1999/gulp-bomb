@@ -8,3 +8,9 @@
     font-family: "Space Grotesk", sans-serif;
   }
 }
+
+@layer utilities {
+  .pause {
+    animation-play-state: paused;
+  }
+}
