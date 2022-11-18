@@ -6,22 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="shortcut icon" href="img/D-logo.ico" type="image/x-icon" />
   </head>
   <body class="bg-black/90 container py-8 noise">
-    <!-- <div class="block screen screen--grid intro">
-      <p class="intro__content">
-        <span class="intro__content-line">Mechanic Sky</span>
-        <span class="intro__content-line intro__content-line--small"
-          >presents</span
-        >
-      </p>
-      <p class="intro__content">
-        <span class="intro__content-line intro__content-line--small"
-          >in association with</span
-        >
-        <span class="intro__content-line">Humanae Future</span>
-      </p>
-    </div> -->
     <main class="w-full h-full" id="home">
       <div class="border border-white">
         <header>
@@ -30,7 +17,7 @@
               class="relative flex items-center justify-between text-white border divide-x-2 divide-white border-b-white"
             >
               <li class="flex-1 pl-8 font-extrabold">
-                <a href="#">Hiimbomb</a>
+                <a href="#">.Hiimbomb</a>
               </li>
               <li
                 class="hidden p-4 lg:block hover:bg-white hover:text-black hover:delay-150"
@@ -53,7 +40,7 @@
         <main class="text-white relative">
           <section id="about">
             <div
-              class="h-[300px] relative flex items-center justify-center border border-b-white line lg:text-[2.23rem] text-[1.5rem]"
+              class="h-[300px] relative flex text-center items-center justify-center border border-b-white line lg:text-[2.23rem] text-[1.5rem]"
             >
               Hey ! I'm Bomb Creative Frontend Developer and UI Designer 🦄.
             </div>
@@ -61,16 +48,23 @@
           <section
             class="border text-center border-b-white flex items-center justify-center container h-[600px]"
           >
-            <div class="lg:text-[36px] text-[1.5rem]">
+            <div class="lg:text-[36px] text-[24px] leading-2 md:leading-loose">
               I'm fresher with experience in Frontend Development.I'm a
-              self-taught Frontend Developer and UI Designer.
+              self-taught
               <span
-                class="p-2 border border-white rounded-2xl hover:rounded-3xl cursor-pointer hover:bg-white/20"
-                >🦄</span
+                class="p-[2px] md:p-2 border border-white rounded-2xl hover:rounded-3xl cursor-pointer hover:bg-white/20"
+                >🔥</span
               >
+              Frontend Developer and UI Designer. When not in front of a
+              computer, Bomb likes playing football
               <span
-                class="p-2 border border-white rounded-2xl hover:rounded-3xl cursor-pointer hover:bg-white/20"
-                >🚀</span
+                class="p-[2px] md:p-2 border border-white rounded-2xl hover:rounded-3xl cursor-pointer hover:bg-white/20"
+                >⚽</span
+              >
+              and cooking food.
+              <span
+                class="p-[2px] md:p-2 border border-white rounded-2xl hover:rounded-3xl cursor-pointer hover:bg-white/20"
+                >🍳</span
               >
             </div>
           </section>
@@ -96,9 +90,11 @@
                 </a>
                 <div class="text-[24px]">Amazon Redesign</div>
                 <p class="">Build With Reactjs, Tailwind and Authentication</p>
-                <span
+                <a
+                  href="https://amazon.hiimbomb.me"
+                  target="_blank"
                   class="px-4 py-2 rounded-md border border-white hover:bg-white hover:text-black cursor-pointer hover:scale-110 duration-150"
-                  >Explorer</span
+                  >Explorer</a
                 >
               </li>
               <li
@@ -118,9 +114,11 @@
                 </a>
                 <div class="text-[24px]">Portfolio Old</div>
                 <p class="">Build with vanila HTML, CSS, JS and grunt cli.</p>
-                <span
+                <a
+                  href="https://resume.hiimbomb.me"
+                  target="_blank"
                   class="px-4 py-2 rounded-md hover:text-black hover:bg-white border border-white cursor-pointer hover:scale-110 duration-150"
-                  >Explorer</span
+                  >Explorer</a
                 >
               </li>
               <li
@@ -138,7 +136,7 @@
                 Stuff I Know
               </span>
             </div>
-            <div class="items-center container">
+            <div class="items-center container lg:py-8 py-4">
               <ul class="grid md:grid-cols-10 grid-cols-5 gap-[16px] logo">
                 <li data-tilt>
                   <img
@@ -211,7 +209,7 @@
                 Stuff To Explore
               </span>
             </div>
-            <div class="items-center container">
+            <div class="items-center container lg:py-8 py-4">
               <ul class="grid md:grid-cols-10 grid-cols-5 gap-[16px] logo">
                 <li data-tilt>
                   <img
@@ -277,12 +275,20 @@
             </div>
           </section>
           <section class="py-4">
-            <div id="contact" class="flex justify-around flex-wrap">
+            <div id="contact" class="flex justify-around flex-wrap space-y-2">
               <ul class="flex lg:space-x-4 space-x-2">
-                <li>Instagram</li>
-                <li>Facebook</li>
-                <li>Github</li>
-                <li>Another</li>
+                <li><a href="#"> Instagram </a></li>
+                <li>
+                  <a href="https://www.facebook.com/henryhuynh99/">
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/henryhuynh1999" target="_blank">
+                    Github
+                  </a>
+                </li>
+                <li><a href="#"> Twitter </a></li>
               </ul>
               <div>Made by Bomb</div>
               <div>
@@ -316,43 +322,45 @@
           </svg>
         </button>
       </div>
-      <div
-        class="fixed w-full bottom-[40px] left-0 opacity-100 flex justify-center"
-        data-tilt
-      >
+      <section>
         <div
-          class="bg-black/40 min-w-[450px rounded-xl flex justify-center items-center text-white space-x-2 p-3"
+          class="fixed w-full bottom-[40px] left-0 opacity-100 flex justify-center"
         >
           <div
-            class="flex justify-center items-center space-x-1 rounded-lg bg-black/90 p-3 relative"
+            data-tilt
+            class="bg-black/40 min-w-[450px] rounded-xl flex justify-center items-center text-white space-x-2 p-3"
           >
-            <div class="hiimbomb">Bomb</div>
-            <div class="hamberger">
-              <div></div>
-              <div></div>
-              <div></div>
+            <div
+              class="flex justify-center items-center space-x-1 rounded-lg bg-black/90 p-3 relative"
+            >
+              <div class="hiimbomb">Bomb</div>
+              <div class="hamberger">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div
+              class="md:flex hidden justify-center items-center rounded-lg bg-white/90 text-black p-2"
+            >
+              <ul class="flex justify-center items-center space-x-2">
+                <li class="rounded-md p-2 border border-gray-400" data-scroll>
+                  <a href="#home" data-scroll-to>Home</a>
+                </li>
+                <li class="rounded-md p-2 border border-gray-400" data-scroll>
+                  <a href="#about" data-scroll-to>About</a>
+                </li>
+                <li class="rounded-md p-2 border border-gray-400">
+                  <a href="#project">Project</a>
+                </li>
+                <li class="rounded-md p-2 border border-gray-400">
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div
-            class="md:flex hidden justify-center items-center rounded-lg bg-white/90 text-black p-2"
-          >
-            <ul class="flex justify-center items-center space-x-2">
-              <li class="rounded-md p-2 border border-gray-400" data-scroll>
-                <a href="#home" data-scroll-to>Home</a>
-              </li>
-              <li class="rounded-md p-2 border border-gray-400" data-scroll>
-                <a href="#about" data-scroll-to>About</a>
-              </li>
-              <li class="rounded-md p-2 border border-gray-400">
-                <a href="#project">Project</a>
-              </li>
-              <li class="rounded-md p-2 border border-gray-400">
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
         </div>
-      </div>
+      </section>
     </main>
     <script src="./js/scripts.js"></script>
   </body>
