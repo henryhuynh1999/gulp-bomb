@@ -22,8 +22,8 @@
         <span class="intro__content-line">Humanae Future</span>
       </p>
     </div> -->
-    <main class="w-full h-[2500px]" id="home">
-      <div class="border border-white h-[2500px]">
+    <main class="w-full h-full" id="home">
+      <div class="border border-white">
         <header>
           <nav>
             <ul
@@ -63,19 +63,11 @@
           >
             <div class="lg:text-[36px] text-[1.5rem]">
               I'm fresher with experience in Frontend Development.I'm a
-              self-taught
-              <span class="text-highlight">Frontend Developer</span> and UI
-              Designer. I'm passionate about creating beautiful and functional
-              <span class="text-highlight">Shiba</span>websites.
+              self-taught Frontend Developer and UI Designer.
               <span
                 class="p-2 border border-white rounded-2xl hover:rounded-3xl cursor-pointer hover:bg-white/20"
                 >🦄</span
               >
-              Frontend
-              <span class="text-highlight">
-                Developer and UI Designer. I'm passionate about creating
-              </span>
-              beautiful and functional websites and applications.
               <span
                 class="p-2 border border-white rounded-2xl hover:rounded-3xl cursor-pointer hover:bg-white/20"
                 >🚀</span
@@ -90,8 +82,10 @@
               <li
                 class="flex flex-col items-center justify-center text-center my-4 space-y-[16px]"
               >
-                <div
-                  class="w-[250px] md:w-[350px] md:min-h-[225px] overflow-hidden"
+                <a
+                  class="w-[250px] rounded-xl md:w-[350px] md:min-h-[225px] overflow-hidden"
+                  href="https://amazon.hiimbomb.me"
+                  target="_blank"
                 >
                   <img
                     data-tilt
@@ -99,31 +93,33 @@
                     src="img/amazon.hiimbomb.me.jpg"
                     alt=""
                   />
-                </div>
+                </a>
                 <div class="text-[24px]">Amazon Redesign</div>
                 <p class="">Build With Reactjs, Tailwind and Authentication</p>
                 <span
-                  class="px-4 py-2 rounded-md border border-white hover:rounded-2xl cursor-pointer hover:bg-black/75 hover:scale-110 duration-150"
+                  class="px-4 py-2 rounded-md border border-white hover:bg-white hover:text-black cursor-pointer hover:scale-110 duration-150"
                   >Explorer</span
                 >
               </li>
               <li
                 class="flex flex-col my-4 items-center text-center space-y-[16px]"
               >
-                <div
-                  class="w-[250px] md:w-[400px] md:h-[230xp] lg:w-[350px] lg:min-h-[225px] overflow-hidden h-[120px]"
+                <a
+                  class="w-[250px] rounded-xl md:w-[400px] md:h-[230xp] lg:w-[350px] lg:min-h-[225px] overflow-hidden h-[120px]"
+                  href="https://resume.hiimbomb.me"
+                  target="_blank"
                 >
                   <img
                     data-tilt
                     class="w-full h-full object-cover rounded-xl hover:scale-105 cursor-pointer duration-300"
                     src="img/resume.hiimbomb.me.jpg"
-                    alt=""
+                    alt="resume"
                   />
-                </div>
+                </a>
                 <div class="text-[24px]">Portfolio Old</div>
                 <p class="">Build with vanila HTML, CSS, JS and grunt cli.</p>
                 <span
-                  class="px-4 py-2 rounded-md border border-white cursor-pointer hover:bg-black/75 hover:scale-110 duration-150"
+                  class="px-4 py-2 rounded-md hover:text-black hover:bg-white border border-white cursor-pointer hover:scale-110 duration-150"
                   >Explorer</span
                 >
               </li>
@@ -132,8 +128,16 @@
               ></li>
             </ul>
           </section>
-          <section class="border border-b-white py-8">
-            <div class="text-white my-8 ml-8 text-[24px]">Stuff I Know</div>
+          <section class="border border-b-white py-3 md:py-6 lg:py-8">
+            <div
+              class="text-white md:my-8 md:ml-8 my-4 ml-4 text-[16px] md:text-[24px]"
+            >
+              <span
+                class="rounded-md hover:rounded-xl hover:bg-white hover:text-black cursor-pointer border border-white p-2"
+              >
+                Stuff I Know
+              </span>
+            </div>
             <div class="items-center container">
               <ul class="grid md:grid-cols-10 grid-cols-5 gap-[16px] logo">
                 <li data-tilt>
@@ -198,7 +202,15 @@
                 </li>
               </ul>
             </div>
-            <div class="text-white my-8 ml-8 text-[24px]">Stuff To Explore</div>
+            <div
+              class="text-white md:my-8 md:ml-8 my-4 ml-4 text-[16px] md:text-[24px]"
+            >
+              <span
+                class="rounded-md hover:rounded-xl cursor-pointer hover:bg-white hover:text-black border border-white p-2"
+              >
+                Stuff To Explore
+              </span>
+            </div>
             <div class="items-center container">
               <ul class="grid md:grid-cols-10 grid-cols-5 gap-[16px] logo">
                 <li data-tilt>
@@ -256,35 +268,53 @@
                   />
                 </li>
                 <li data-tilt>
-                  <img src="svg/laravel.svg" alt="" />
+                  <img
+                    src="https://res.cloudinary.com/hiimbomb-me/image/upload/v1668682738/samples/ecommerce/laravel_srbooj.svg"
+                    alt=""
+                  />
                 </li>
               </ul>
+            </div>
+          </section>
+          <section class="py-4">
+            <div id="contact" class="flex justify-around flex-wrap">
+              <ul class="flex lg:space-x-4 space-x-2">
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Github</li>
+                <li>Another</li>
+              </ul>
+              <div>Made by Bomb</div>
+              <div>
+                Inspire design by
+                <a class="text-white" href="awwwards.com">Awwwards</a>
+              </div>
             </div>
           </section>
         </main>
       </div>
       <!-- Control menu -->
       <div
-        class="fixed md:block hidden bottom-[40px] left-[60px] p-2 text-white cursor-pointer js-totop is-hidden z-20"
+        class="fixed bottom-[45px] md:bottom-[40px] md:left-[45px] left-[15px] lg:left-[60px] p-2 text-white cursor-pointer back-to-top z-20"
       >
-        <a href="#">
-          <button class="p-6 bg-black/90 rounded-2xl cursor-pointer">
-            <svg
-              width="18"
-              height="22"
-              viewBox="0 0 18 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M8.69899 3.08174L7.76441 4.02584L7.75493 4.0258L1.3542 10.4265L0.0117182 9.08405L6.41245 2.68332L8.69707 0.398693L10.0396 1.74118L17.4565 9.15817L16.1159 10.4893L9.66059 4.0339L8.69899 3.08174ZM8.22508 5.69881L10.4911 7.2949L10.5527 21.8672L8.29342 21.8576L8.22508 5.69881Z"
-                fill="white"
-              ></path>
-            </svg>
-          </button>
-        </a>
+        <button
+          class="p-3 md:p-4 lg:p-6 bg-black/90 rounded-xl md:rounded-2xl cursor-pointer"
+        >
+          <svg
+            width="18"
+            height="22"
+            viewBox="0 0 18 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8.69899 3.08174L7.76441 4.02584L7.75493 4.0258L1.3542 10.4265L0.0117182 9.08405L6.41245 2.68332L8.69707 0.398693L10.0396 1.74118L17.4565 9.15817L16.1159 10.4893L9.66059 4.0339L8.69899 3.08174ZM8.22508 5.69881L10.4911 7.2949L10.5527 21.8672L8.29342 21.8576L8.22508 5.69881Z"
+              fill="white"
+            ></path>
+          </svg>
+        </button>
       </div>
       <div
         class="fixed w-full bottom-[40px] left-0 opacity-100 flex justify-center"
@@ -308,13 +338,13 @@
           >
             <ul class="flex justify-center items-center space-x-2">
               <li class="rounded-md p-2 border border-gray-400" data-scroll>
-                <a href="#home" data-scroll-to> Home </a>
+                <a href="#home" data-scroll-to>Home</a>
               </li>
               <li class="rounded-md p-2 border border-gray-400" data-scroll>
-                <a href="#about" data-scroll-to> About </a>
+                <a href="#about" data-scroll-to>About</a>
               </li>
               <li class="rounded-md p-2 border border-gray-400">
-                <a href="#project"> Project </a>
+                <a href="#project">Project</a>
               </li>
               <li class="rounded-md p-2 border border-gray-400">
                 <a href="#contact">Contact</a>
@@ -323,19 +353,6 @@
           </div>
         </div>
       </div>
-      <!-- <div id="contact" class="flex justify-around">
-        <ul>
-          <li>Instagram</li>
-          <li>Facebook</li>
-          <li>Github</li>
-          <li>Another</li>
-        </ul>
-        <div>Made by Bomb</div>
-        <div>
-          Inspire design by
-          <a class="text-white" href="awwwards.com">Awwwards</a>
-        </div>
-      </div> -->
     </main>
     <script src="./js/scripts.js"></script>
   </body>

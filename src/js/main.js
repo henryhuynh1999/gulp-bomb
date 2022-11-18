@@ -26,3 +26,20 @@ $(document).ready(function () {
   }
   initScript();
 });
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 50) {
+    $(".back-to-top").fadeIn();
+  } else {
+    $(".back-to-top").fadeOut();
+  }
+  // if ($(this).scrollTop() > 150) {
+  //   $(".page-header").addClass("sticky top-0");
+  // } else {
+  //   $(".page-header").removeClass("sticky top-0");
+  // }
+});
+$(".back-to-top").on("click", function (e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: 0 }, 500);
+  return false;
+});
