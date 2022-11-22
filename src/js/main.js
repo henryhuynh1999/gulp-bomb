@@ -31,10 +31,11 @@ var tlLoadIntro = new TimelineMax({
   onComplete: function () {
     $("body").removeClass("fullHeight");
     flagScroll = true;
+    $("div.load").css("display", "none");
   },
 });
 function loadIntro() {
-  $(".control").addClass("active");
+  $(".control").addClass("hidden");
   var loadIntro = $(".load"),
     text1LoadIntro = $(".load .load__text1"),
     text2LoadIntro = $(".load .load__text2");
@@ -62,7 +63,6 @@ function loadIntro() {
       },
       "-=0.4"
     );
-  $(".control").removeClass("active");
-  $("body").removeClass("overflow-hidden");
+  $(".control").removeClass("hidden");
 }
 loadIntro();
