@@ -30,17 +30,22 @@ module.exports = {
         },
       },
       animation: {
-        marquee: "marquee 10s linear infinite",
+        marquee: "marquee 5s linear infinite",
         marquee2: "marquee2 10s linear infinite",
+        intro: "intro 2s ease-in-out",
       },
       keyframes: {
         marquee: {
-          "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-100%)" },
+          "0%": { transform: "translateY(0%)" },
+          "100%": { transform: "translateY(-100%)" },
         },
         marquee2: {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(0%)" },
+        },
+        intro: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
         },
       },
     },

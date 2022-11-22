@@ -72,13 +72,12 @@
               >
             </div>
           </section>
-          <section
-            class="border border-b-white relative after:hidden lg:after:absolute lg:after:inset-y-0 lg:after:w-[1px] lg:after:h-full lg:after:bg-white lg:after:left-[50%]"
-            id="project"
-          >
-            <ul class="grid lg:grid-cols-2 grid-cols-1 lg:gap-0 gap-[8px]">
+          <section class="border border-b-white" id="project">
+            <ul
+              class="grid lg:grid-cols-2 grid-cols-1 lg:gap-0 gap-[8px] divide-y lg:divide-x"
+            >
               <li
-                class="flex flex-col items-center justify-center text-center my-4 space-y-[16px]"
+                class="flex flex-col items-center justify-center text-center hover:bg-black/70 space-y-4 py-4"
               >
                 <a
                   class="w-[250px] rounded-xl md:w-[350px] md:min-h-[225px] overflow-hidden"
@@ -102,7 +101,7 @@
                 >
               </li>
               <li
-                class="flex flex-col my-4 items-center text-center space-y-[16px]"
+                class="flex flex-col items-center text-center hover:bg-black/70 space-y-4 py-4"
               >
                 <a
                   class="w-[250px] rounded-xl md:w-[350px] md:min-h-[225px] overflow-hidden"
@@ -125,9 +124,6 @@
                   >Explorer</a
                 >
               </li>
-              <li
-                class="flex flex-col items-center justify-center text-center col-span-full"
-              ></li>
             </ul>
           </section>
           <section class="border border-b-white py-3 md:py-6 lg:py-8">
@@ -305,7 +301,7 @@
       </div>
       <!-- Control menu -->
       <div
-        class="fixed bottom-[45px] md:bottom-[40px] md:left-[45px] left-[15px] lg:left-[60px] p-2 text-white cursor-pointer back-to-top z-20"
+        class="fixed bottom-[30px] md:left-[45px] left-[15px] lg:left-[60px] p-2 text-white cursor-pointer back-to-top z-20"
       >
         <button
           class="p-3 md:p-4 lg:p-6 bg-black/90 rounded-xl md:rounded-2xl cursor-pointer"
@@ -332,7 +328,7 @@
         >
           <div
             data-tilt
-            class="bg-black/40 w-auto md:min-w-[450px] rounded-xl flex justify-center items-center text-white space-x-2 p-3"
+            class="bg-black/40 w-auto md:min-w-[450px] pointer-events-auto rounded-xl flex justify-center items-center text-white space-x-2 p-3"
           >
             <div
               class="flex justify-center items-center space-x-1 rounded-lg bg-black/90 p-3 relative"

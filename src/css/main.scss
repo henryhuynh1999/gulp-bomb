@@ -8,6 +8,62 @@ body {
   --width-hover: 80px;
   --transition: 0.3s;
 }
+
+.load {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 999;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.load > div {
+  font-size: 18px;
+  font-family: IBM;
+  line-height: normal;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 10px;
+  mix-blend-mode: difference;
+  white-space: nowrap;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  position: absolute;
+  margin-top: -30px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .load > div {
+    font-size: 16px;
+    letter-spacing: 6px;
+    margin-top: 0px;
+  }
+}
+.app {
+}
+.control.active {
+  display: none;
+}
+html.fullHeight,
+body.fullHeight {
+  height: 100% !important;
+  overflow: hidden;
+}
 .noise {
   &::before {
     animation: grain 6s steps(10) infinite;
@@ -62,7 +118,6 @@ body {
     transform: translate(-10%, 10%);
   }
 }
-
 .back-to-top {
   display: none;
 }
