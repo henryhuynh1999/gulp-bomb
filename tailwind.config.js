@@ -19,7 +19,7 @@ module.exports = {
       },
       fontFamily: {
         Grotesk: ["Space Grotesk", "sans-serif"],
-        IBM: ["IBM Plex Serif", "sans-serif"],
+        Righteous: ["Righteous", "cursive"],
       },
       container: {
         center: true,
