@@ -23,11 +23,8 @@ body {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  -ms-align-items: center;
   align-items: center;
-  -webkit-align-items: center;
   justify-content: center;
-  -webkit-justify-content: center;
 }
 .load > div {
   font-size: 24px;
@@ -35,7 +32,7 @@ body {
   line-height: normal;
   color: #fff;
   // text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 10px;
   mix-blend-mode: difference;
   white-space: nowrap;
@@ -43,8 +40,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
   position: absolute;
   margin-top: -30px;
 }
